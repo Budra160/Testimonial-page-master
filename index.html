@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Testimonial Page | devChallenges.io</title>
+
+    <style>
+
+      :root{
+        --primary-bg-color: #FAFAF9;
+        --foreground-color: #fff;
+        --secondary-star-color: #D4D4D8;
+        --secondary-text-color: #52525A;
+        --primary-text-color: #18181B;
+        --check-color: #4CA154;
+        --primary-star-color: #F5C044
+
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @font-face {
+        font-family: Sora;
+        src: url(fonts/Sora-VariableFont_wght.ttf);
+      }
+
+      body {
+        height: 100vh;
+        font-family: Sora;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--primary-text-color);
+        background-color: var(--primary-bg-color);
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+
+      .reviews-container{
+
+        width:100%;
+        height: 100%;
+        background-color: var(--primary-bg-color);
+        display: flex;
+        align-items: center;
+        padding: 3rem 4rem;
+        gap: 4rem;
+      }
+
+      .reviews-left{
+
+        display:flex;
+        flex-direction: column;
+        gap: 1rem;
+        width:50%;
+        color: var(--secondary-text-color);
+      }
+
+      .reviews-right{
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width:50%;
+        color: var(--secondary-text-color);
+
+
+      }
+      .reviews-left p{
+
+        font-size: 1.15rem;
+        line-height: 1.5;
+      }
+
+      ul{
+        list-style-image: url("resources/Done_ring_round_fill.svg") ;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+      }
+
+    li{
+      display: flex;
+      gap: .75rem;
+      align-items: start;
+      font-size: .9rem;
+    }
+
+    .icon{
+      height:2rem;
+    }
+
+    .star{
+      height: 1.5em;
+    }
+
+    .review-google{
+
+      margin-left: 35%;
+      display:flex;
+      flex-direction: column;
+      width: fit-content;
+      gap:1rem;
+      background-color: var(--foreground-color);
+      padding: 2rem 2rem;
+      border-radius: 1rem;
+
+    }
+
+    .review-meta{
+      
+      display:flex;
+      flex-direction: column;
+      width: fit-content;
+      gap:1rem;
+      background-color: var(--foreground-color);
+      padding: 2rem 2rem;
+      border-radius: 1rem;
+    
+    }
+
+    .review-content{
+
+      display:flex;
+      flex-direction: column;
+      gap: .5rem;
+      line-height: 1.5;
+      width:25ch;
+      }
+
+    .review-top{
+
+      display:flex;
+      gap:1rem;
+      align-items: center;
+    }
+
+    h2{
+      font-size: 1rem;
+    }
+    </style>
+  </head>
+  <body>
+    
+    <div class="reviews-container">
+
+      <div class="reviews-left">
+        <h1>Reviewers</h1>
+        <p>Reviewers is where people can access guidelines, checklists, 
+          and other tools to assist them in reviewing papers or manuscripts. 
+          It provides a structured approach to ensure that the review process is 
+          thorough, efficient, and consistent.</p>
+        <ul>
+          <li> <img src="resources/Done_ring_round_fill.svg" alt="check symbol"> Checklist to Review and Academic Paper</li>
+          <li> <img src="resources/Done_ring_round_fill.svg" alt="check symbol"> Peer review Checklist</li>
+          <li> <img src="resources/Done_ring_round_fill.svg" alt="check symbol"> Checklist for Editors, Reviewers and Authors of SPIE journals</li>
+        </ul>
+      </div>
+
+      <div class="reviews-right">
+        <div class="review-google">
+          <div class="review-top">
+            <img class="icon" src="resources/google-testimonial.svg" alt="google-logo">
+            <div class="stars-wrapper">
+              <img class="star" src="resources/Star_fill.svg" alt="star / review">
+              <img class="star" src="resources/Star_fill.svg" alt="star / review">
+              <img class="star" src="resources/Star_fill.svg" alt="star / review">
+              <img class="star" src="resources/Star_fill.svg" alt="star / review">
+              <img class="star" src="resources/Star_fill_gray.svg" alt="star / review">
+            </div>
+          </div>
+
+          <div class="review-content">
+            <h2>Samntha Lee</h2>
+            <p>The checklist ensures that the review process is thorough</p>
+          </div>
+        </div>
+        <div class="review-meta">
+          <div class="review-top">
+            <img class="icon" src="resources/meta-testimonial.svg" alt="meta-logo">
+            <div class="stars-wrapper">
+              <img class="star" src="resources/Star_fill.svg" alt="star / review">
+              <img class="star" src="resources/Star_fill.svg" alt="star / review">
+              <img class="star" src="resources/Star_fill.svg" alt="star / review">
+              <img class="star" src="resources/Star_fill.svg" alt="star / review">
+              <img class="star" src="resources/Star_fill.svg" alt="star / review">
+            </div>
+          </div>
+
+          <div class="review-content">
+            <h2>Rachel Patel</h2>
+            <p>I highly recommend the Writecream Business Description</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="author-info">
+      Coded by <a href="#">Josip Budrovčan</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
